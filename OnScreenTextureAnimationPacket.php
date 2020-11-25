@@ -6,7 +6,7 @@ use pocketmine\plugin\PluginBase;
 use pocketmine\command\{CommandSender, Command};
 use pocketmine\network\mcpe\protocol\OnScreenTextureAnimationPacket;
 
-class OnScreenTextureAnimationPacket extends PluginBase{
+class TextureAnimationPacket extends PluginBase{
 
     public function onEnable(): void{
         $this->getServer()->getCommandMap()->register("te", new TotemCommand($this));
